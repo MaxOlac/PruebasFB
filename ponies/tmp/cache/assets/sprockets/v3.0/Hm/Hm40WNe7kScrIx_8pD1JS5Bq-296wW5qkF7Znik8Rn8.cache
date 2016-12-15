@@ -1,0 +1,11 @@
+I"?(function() {
+  $(document).ready(function() {
+    return $("#ponyForm").on("ajax:success", function(e, data, status, xhr) {
+      return $("#ponyForm").append(xhr.responseText);
+    }).on("ajax:error", function(e, xhr, status, error) {
+      return $("#ponyForm").append("<p>ERROR</p>");
+    });
+  });
+
+}).call(this);
+:ET

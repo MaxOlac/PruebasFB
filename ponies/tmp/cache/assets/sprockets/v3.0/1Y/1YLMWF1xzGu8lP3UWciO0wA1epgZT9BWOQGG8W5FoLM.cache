@@ -1,0 +1,7 @@
+I"ˆ(function() {
+  $(document).on("ajax:succes", "form#ponyForm", function(ev, data) {
+    return console.log(data);
+  });
+
+}).call(this);
+:ET
